@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Color on hover */
+}
+
+section {
+    /* padding: 100px 20px; */
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure text readability over background images */
+section h1, section h2 {
+    font-size: 3em;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+}
+
+section p {
+    font-size: 1.2em;
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); */
+}
+
+#home {
+    /* background-color: #f4f4f4; */
+    background: url('images/flat-lay-workstation-with-copy-space-laptop_23-2148430879.avif')no-repeat center center/cover;
+}
+
+#services {
+    /* background-color: #e2e2e2; */
+    background: url('images/blue-psychedelic-paper-shapes_23-2149378252.avif')no-repeat center center/cover;
+}
+
+#about {
+    /* background-color: #ccc; */
+    background: url('images/autumn-leaves-composition_23-2151554949.avif')no-repeat center center/cover;
+}
+
+#contact {
+    background-color: #aaa;
+    background: url('images/blue-psychedelic-paper-shapes_23-2149378252.avif')no-repeat center center/cover;
+}
+
+/* Navbar change on scroll */
+.scrolled {
+    background-color: #222; /* Darker background when scrolled */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home {
+        margin-top: 13rem;
+    }
+}
