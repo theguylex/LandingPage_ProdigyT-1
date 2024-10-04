@@ -75,6 +75,10 @@ section p {
     background: url('images/blue-psychedelic-paper-shapes_23-2149378252.avif')no-repeat center center/cover;
 }
 
+#services h2 {
+    padding-top: 60px;
+}
+
 .servicesBox {
     display: flex;
     gap: 1rem;
@@ -85,7 +89,7 @@ section p {
 .box {
     background-color: rgba(0, 0, 0, .8);
     width: 240px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 .box h4 {
@@ -100,8 +104,16 @@ section p {
 }
 
 #about {
-    /* background-color: #ccc; */
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
     background: url('images/autumn-leaves-composition_23-2151554949.avif')no-repeat center center/cover;
+}
+
+#about p {
+    text-align: justify;
+    padding: 1rem 10%;
 }
 
 #contact {
