@@ -117,8 +117,29 @@ section p {
 }
 
 #contact {
-    /* background-color: #aaa; */
+    min-height: 50vh;
+    color: black;
+    text-align: center;
+    padding-top: 60px;
     background: url('images/close-up-laptop-pencils-printer-tray-with-blank-paper-yellow-background_23-2147875590.jpg')no-repeat center center/cover;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-links a {
+    color: black;
+}
+
+.fa-facebook-f, .fa-x-twitter, .fa-envelope, .fa-linkedin-in {
+    transition: .5s ease;
+}
+
+.fa-facebook-f:hover, .fa-x-twitter:hover, .fa-envelope:hover, .fa-linkedin-in:hover {
+    transform: translateY(-10px);
 }
 
 /* Navbar change on scroll */
