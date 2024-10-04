@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -43,11 +42,9 @@ nav ul li a:hover {
     color: #ff6347; /* Color on hover */
 }
 
-section {
+#home {
     /* padding: 100px 20px; */
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
     color: white;
     text-align: center;
     display: flex;
@@ -56,7 +53,6 @@ section {
     justify-content: center;
 }
 
-/* Ensure text readability over background images */
 section h1, section h2 {
     font-size: 3em;
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
@@ -68,23 +64,39 @@ section p {
 }
 
 #home {
-    /* background-color: #f4f4f4; */
     background: url('images/flat-lay-workstation-with-copy-space-laptop_23-2148430879.avif')no-repeat center center/cover;
 }
 
 #services {
     /* background-color: #e2e2e2; */
+    min-height: 100vh;
+    color: white;
+    text-align: center;
     background: url('images/blue-psychedelic-paper-shapes_23-2149378252.avif')no-repeat center center/cover;
 }
 
 .servicesBox {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box {
-    background-color: black;
-    width: 20vw;
+    background-color: rgba(0, 0, 0, .8);
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+.box h4 {
+    font-size: 1.6rem;
+}
+
+.box p {
+    font-size: 1.3rem;
+    padding: 15px 5%;
+    line-height: 1.6rem;
+    /* width: 60px; */
 }
 
 #about {
