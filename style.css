@@ -77,6 +77,16 @@ section p {
     background: url('images/blue-psychedelic-paper-shapes_23-2149378252.avif')no-repeat center center/cover;
 }
 
+.servicesBox {
+    display: flex;
+    gap: 1rem;
+}
+
+.box {
+    background-color: black;
+    width: 20vw;
+}
+
 #about {
     /* background-color: #ccc; */
     background: url('images/autumn-leaves-composition_23-2151554949.avif')no-repeat center center/cover;
@@ -89,7 +99,7 @@ section p {
 
 /* Navbar change on scroll */
 .scrolled {
-    background-color: #222; /* Darker background when scrolled */
+    background-color: rgb(3, 7, 54);
 }
 
 /* Responsive design for smaller screens */
